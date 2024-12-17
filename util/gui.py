@@ -529,7 +529,7 @@ class WorkerThread(QThread):
         # Call it as global (cuz the stop button uses it) and reset it to False
         global unexpected_end
         unexpected_end = False
-
+        print('\n',uploaders,'\n',)
         # Will break if "END" found in title (Erai-raws)
         while not unexpected_end and episode <= start_end[1] and fails_in_a_row < 10:
             for uploader in uploaders:
